@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -36,13 +37,14 @@ public class SecTest {
             System.out.println(searchRez1.get(i).getAttribute("href"));
             }
 
-            driver.get(searchRez1.get(6).getAttribute("href"));
+            driver.get(searchRez1.get(5).getAttribute("href"));
+        Assert.assertEquals(driver.getTitle(), "Большой адронный коллайдер: жизнь после Хиггса - YouTube");
 
-        try {
-            Thread.sleep(30000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(30000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
     }
 
