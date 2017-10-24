@@ -34,7 +34,7 @@ public class SecTest {
         List <WebElement> searchRez1 = driver.findElements(By.xpath("//h3[@class='r']/a"));
         for (int i = 0; i < searchRez1.size(); i++) {
             System.out.println(searchRez1.get(i).getText());
-            System.out.println(searchRez1.get(i).getAttribute("href"));
+            System.out.println(searchRez1.get(i).getAttribute("href") + "\n");
             }
 
             driver.get(searchRez1.get(5).getAttribute("href"));
