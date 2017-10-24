@@ -40,12 +40,6 @@ public class SecTest {
             driver.get(searchRez1.get(5).getAttribute("href"));
         Assert.assertEquals(driver.getTitle(), "Большой адронный коллайдер: жизнь после Хиггса - YouTube");
 
-//        try {
-//            Thread.sleep(30000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-
     }
 
     @AfterTest
